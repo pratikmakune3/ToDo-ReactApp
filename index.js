@@ -14,8 +14,7 @@ var ToDoComponent = React.createClass({
 
     render : function (){
 
-        var todos = this.state.todos;       // var todos = contain local version of todos data declared inside initial state
-not 
+        var todos = this.state.todos;       // var todos = contain local version of todos data declared inside initial state 
         var todos = todos.map(function(item, index){
                 return (
                     <ToDoItem item={item} key={index} onDelete = {this.onDelete} />
